@@ -1,0 +1,82 @@
+#main_content {
+	height: 700px;
+	background: url(./images/sala_bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+p {
+	font-family: 'Nunito', Arial;
+}
+h2{
+	font-family:  Calibri,Arial,Helvetica,Sans-Serif;
+}
+#content {
+	position: relative;
+	overflow: hidden;
+}
+
+#content img {
+	background-image: url("./images/sala1.jpg");
+}
+
+#intro {
+	width: 100%;
+	margin: 100px 0 50px 0;
+}
+
+#intro p {
+	color: #FFF;
+	text-align: justify;
+	text-align: center;
+	font-size: 25px;
+}
+section{
+	height:auto; 
+}
+article#signup, article#login {
+	float:left;
+	background-color: #f5f5f5;
+	width: 40%;
+	border-radius: 10px;
+	margin: 0 0 0 7%;
+	padding: 0 0 10px 0;
+	vertical-align: middle;
+	display:inline-block;
+}
+
+article#signup h2#cadastro, article#login h2#login {
+	text-align: center;
+	font-size: 32px;
+}
+
+#content .form-horizontal {
+	margin: 0 50px 0 0;
+}
+
+#cadastrar {
+	margin-right: 30px;
+}
+
+#forgot_pass {
+	text-decoration: underline;
+	color: #383838;
+	font-family: 'Nunito', Arial;
+	float: center;
+}
+
+#login_form {
+	margin-top: 20px;
+}
+
+#footer {
+	background-color: #383838;
+	height: 80px;
+	
+}
+#footer span#copyright{
+	color:#FFF;
+	margin-left:40%;
+}

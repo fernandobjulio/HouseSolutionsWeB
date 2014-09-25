@@ -7,43 +7,88 @@
 
 	<ui:define name="title">Welcome to House Solutions</ui:define>
 	<ui:define name="content">
-		<div id="content">
+		<div id="content" class="img-responsive">
 			<!-- <h:graphicImage library="images" name="sala1.jpg"
 				class="img-responsive" alt="Responsive image" /> -->
-			<div id="signup">
-				<h:form class="form-horizontal" role="form">
-					<div class="form-group">
-						<h:outputText value="Login" styleClass="col-sm-2 control-label" />
-						<div class="col-sm-10">
-							
-							<h:inputText  value="" styleClass="form-control" />
-							
-						</div>
-					</div>
-					<div class="form-group">
-						<h:outputText value="Senha" styleClass="col-sm-2 control-label" />
-						<div class="col-sm-10">
+			<div id="intro">
+				<p>
+					A House Solutions auxilia na organização de seus itens pessoais. <br />Cadastre-se
+					gratuitamente!
+				</p>
 
-							<h:inputSecret value=""  styleClass="form-control" />
-						</div>
-					</div>
-					<div class="form-group">
-						<h:outputText value="Nome" styleClass="col-sm-2 control-label" />
-						<div class="col-sm-10">
-
-							<h:inputText value="" styleClass="form-control" />
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="col-sm-offset-2 col-sm-10">				
-							<h:commandLink value="Cadastrar" styleClass="btn btn-success"></h:commandLink>
-							<h:commandLink value="Login" styleClass="btn btn-primary"></h:commandLink>
-						</div>
-					</div>
-
-				</h:form>
 			</div>
+			<section id="main_section">
+				<article id="signup">
+					<h:form class="form-horizontal" role="form">
+						<div class="form-group"></div>
+
+						<h2 id="cadastro">Cadastre-se</h2>
+						<div class="form-group" id="login_form">
+							<h:outputText value="Usuário" styleClass="col-sm-2 control-label" />
+							<div class="col-sm-10">
+
+								<h:inputText value="" styleClass="form-control" />
+
+							</div>
+						</div>
+						<div class="form-group">
+							<h:outputText value="Senha" styleClass="col-sm-2 control-label" />
+							<div class="col-sm-10">
+
+								<h:inputSecret value="" styleClass="form-control" />
+							</div>
+						</div>
+						<div class="form-group">
+							<h:outputText value="Nome" styleClass="col-sm-2 control-label" />
+							<div class="col-sm-10">
+
+								<h:inputText value="" styleClass="form-control" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<h:commandLink value="Cadastrar" styleClass="btn btn-success"></h:commandLink>
+
+							</div>
+						</div>
+
+					</h:form>
+				</article>
+				<article id="login">
+					<h:form class="form-horizontal" role="form">
+						<div class="form-group"></div>
+
+						<h2 id="login">Iniciar Sessão</h2>
+						<div class="form-group" id="login_form">
+							<h:outputText value="Usuário" styleClass="col-sm-2 control-label" />
+							<div class="col-sm-10">
+
+								<h:inputText value="" styleClass="form-control" />
+
+							</div>
+						</div>
+						<div class="form-group">
+							<h:outputText value="Senha" styleClass="col-sm-2 control-label" />
+							<div class="col-sm-10">
+
+								<h:inputSecret value="" styleClass="form-control" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								
+								<h:commandLink value="Entrar"
+									styleClass="btn btn-primary pull-left"></h:commandLink>
+								<h:commandLink value="Esqueceu sua senha?"
+									id="forgot_pass" styleClass="pull-right"></h:commandLink>
+
+							</div>
+						</div>
+
+					</h:form>
+				</article>
+			</section>
 		</div>
 	</ui:define>
 </ui:composition>
